@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Header theTitle="Popular TV Shows" />
-    <Card v-bind:cardList="show"/>
+    <Header theTitle="Popular TV Shows"></Header>
+    <Card v-bind:cardList="show"></Card>
   </div>
 </template>
 
@@ -31,6 +31,7 @@ export default {
       .then((response) => {
         this.show = response.data.results;
       });
+      this.show.slice(0,4).forEach(this.show);
   },
 };
 </script>
