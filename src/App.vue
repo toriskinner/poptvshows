@@ -19,10 +19,6 @@ export default {
   data() {
     return {
       show: [
-        {name:"", poster_path:"", overview:""},
-        {name:"", poster_path:"", overview:""},
-        {name:"", poster_path:"", overview:""},
-        {name:"", poster_path:"", overview:""}
         //name, poster path, overview
       ],
     };
@@ -33,7 +29,7 @@ export default {
         "https://api.themoviedb.org/3/tv/popular?api_key=d8546b0484555ca34d6b76584095683c&language=en-US&page=1"
       )
       .then((response) => {
-        this.show = response.data;
+        this.show = response.data.results;
       });
   },
 };
