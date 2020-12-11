@@ -31,7 +31,6 @@ export default {
       .then((response) => {
         this.show = response.data.results;
       });
-      this.show.slice(0,4).forEach(this.show);
   },
 };
 </script>
