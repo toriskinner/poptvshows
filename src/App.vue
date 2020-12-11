@@ -40,4 +40,12 @@ export default {
   margin: 0;
   padding: 0;
 }
+  html { 
+    font-size: 13px;
+    background-image: url("components/niceBg.png"); 
+  }
+  body {
+    background-image: url("components/niceBg.png");  
+    font-family: 'Roboto', sans-serif; 
+  }
 </style>
